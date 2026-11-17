@@ -1,124 +1,139 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mian Goat Farm Sahiwal | Qurbani Goats & Online Sadqah Service Pakistan</title>
-    <meta name="description" content="Buy healthy Beetal, Rajanpuri, and Qurbani goats from Mian Goat Farm Sahiwal. We also offer Online Qurbani and Sadqah meat distribution to poor families in Pakistan.">
-    <meta name="keywords" content="Goat farm in Sahiwal, Qurbani bakra 2027, Online Qurbani Pakistan, Sadqah goat meat distribution, Beetal bakra for sale, Mian Goat Farm">
+    <title>Mian Goat Farm Sahiwal | Online Goat Store, Investment & Qurbani Pakistan</title>
+    <meta name="description" content="Shop from 25+ Qurbani goats and 8 pure breed female goats at Mian Goat Farm Sahiwal. Online livestock investment opportunities and Qurbani/Sadqah service in Pakistan.">
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
-        header { background-color: #1b4332; color: white; padding: 25px 15px; text-align: center; }
-        header h1 { margin: 0; font-size: 28px; }
-        header p { margin: 8px 0 0; font-size: 16px; color: #d8f3dc; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .highlight-box { background-color: #e9f5db; border-left: 5px solid #2d6a4f; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
-        .highlight-box h2 { color: #1b4332; margin-top: 0; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 220px; object-fit: cover; background-color: #ddd; }
-        .card-body { padding: 15px; }
-        .card-title { font-size: 20px; font-weight: bold; color: #1b4332; margin: 0 0 10px; }
-        .details { font-size: 14px; color: #555; margin-bottom: 15px; line-height: 1.6; }
-        .price { font-size: 18px; font-weight: bold; color: #d00000; margin-bottom: 15px; }
-        .btn-whatsapp { display: block; text-align: center; background-color: #25D366; color: white; text-decoration: none; padding: 12px; border-radius: 6px; font-weight: bold; font-size: 15px; }
-        .btn-whatsapp:hover { background-color: #1ebe57; }
-        .steps { background: white; padding: 20px; border-radius: 8px; margin-top: 30px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-        footer { background-color: #1b4332; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 14px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f3f4f6; color: #1f2937; }
+
+        /* Top Announcement Bar */
+        .top-bar { background: #091a13; color: #ffd166; text-align: center; padding: 8px 10px; font-size: 12px; font-weight: 500; }
+
+        /* Navigation Menu */
+        header { background: #0f291e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .nav-container { max-width: 1200px; margin: auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .logo { font-size: 20px; font-weight: 700; color: #ffd166; cursor: pointer; }
+        .nav-links { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: white; text-decoration: none; font-size: 13px; font-weight: 500; cursor: pointer; transition: 0.2s; padding: 6px 10px; border-radius: 6px; }
+        .nav-links a:hover, .nav-links a.active { background: #1b4332; color: #ffd166; }
+        .nav-invest-btn { background: #ffd166 !important; color: #0f291e !important; font-weight: 700 !important; }
+
+        /* Page Sections Control */
+        .page-section { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .page-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(15, 41, 30, 0.82), rgba(15, 41, 30, 0.88)), url('https://unsplash.com') center/cover no-repeat;
+            color: white; text-align: center; padding: 60px 20px;
+        }
+        .hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
+        .hero p { font-size: 15px; color: #e5e7eb; max-width: 680px; margin: 0 auto 22px; }
+        .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-gold { background: #ffd166; color: #0f291e; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; display: inline-block; cursor: pointer; border: none; }
+        .btn-outline { border: 2px solid white; color: white; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; cursor: pointer; background: transparent; }
+
+        /* Live Inventory Bar */
+        .stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 1100px; margin: -30px auto 25px; padding: 0 20px; position: relative; z-index: 10; }
+        .stat-box { background: white; padding: 18px; border-radius: 12px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-bottom: 4px solid #0f291e; }
+        .stat-num { font-size: 26px; font-weight: 700; color: #0f291e; }
+        .stat-label { font-size: 13px; color: #4b5563; font-weight: 500; }
+
+        .container { max-width: 1200px; margin: auto; padding: 30px 20px; }
+        .section-heading { font-size: 24px; font-weight: 700; color: #0f291e; margin-bottom: 6px; }
+        .section-sub { font-size: 14px; color: #6b7280; margin-bottom: 25px; }
+
+        /* E-Commerce Product Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .product-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; display: flex; flex-direction: column; }
+        
+        /* Image Gallery inside Card */
+        .main-img-box { position: relative; width: 100%; height: 240px; background: #eee; }
+        .main-img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .tag-badge { position: absolute; top: 12px; left: 12px; background: #dc2626; color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px; }
+        .tag-female { background: #7c3aed; }
+        .thumb-row { display: flex; gap: 6px; padding: 10px 15px 0; justify-content: center; }
+        .thumb-row img { width: 52px; height: 42px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.75; transition: 0.2s; }
+        .thumb-row img:hover { border-color: #0f291e; opacity: 1; }
+
+        .product-info { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-title { font-size: 17px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+        .product-meta { font-size: 13px; color: #4b5563; margin-bottom: 12px; line-height: 1.5; }
+        .price-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; border-top: 1px solid #f3f4f6; padding-top: 10px; }
+        .price-tag { font-size: 20px; font-weight: 700; color: #0f291e; }
+        .stock-tag { font-size: 12px; color: #059669; font-weight: 600; background: #d1fae5; padding: 2px 8px; border-radius: 4px; }
+        .btn-buy { display: block; text-align: center; background: #25D366; color: white; text-decoration: none; padding: 11px; border-radius: 8px; font-weight: 600; font-size: 14px; }
+
+        /* Investment Highlight Section */
+        .invest-banner { background: linear-gradient(135deg, #0f291e 0%, #1b4332 100%); color: white; border-radius: 16px; padding: 35px 25px; margin: 20px 0 40px; box-shadow: 0 10px 25px rgba(15,41,30,0.2); }
+        .invest-banner h2 { color: #ffd166; font-size: 24px; margin-bottom: 10px; }
+        .invest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+        .invest-plan { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,209,102,0.3); padding: 20px; border-radius: 12px; }
+        .invest-plan h4 { color: #ffd166; margin-bottom: 8px; font-size: 17px; }
+        .invest-plan p { font-size: 13px; color: #e5e7eb; line-height: 1.6; }
+
+        /* Content Boxes */
+        .info-card { background: white; padding: 28px; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        .info-card h3 { color: #0f291e; margin-bottom: 10px; font-size: 20px; }
+        .info-card p { font-size: 14px; color: #4b5563; line-height: 1.7; margin-bottom: 12px; }
+
+        .job-box { border: 1px solid #e5e7eb; padding: 18px; border-radius: 10px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 11px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }
+
+        .float-wa { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 12px 18px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 999; }
+        footer { background: #091a13; color: #9ca3af; text-align: center; padding: 30px 20px; font-size: 13px; margin-top: 40px; }
     </style>
 </head>
 <body>
 
+<div class="top-bar">🐐 25+ Qurbani Bakray & 8 Nasli Bakriyan Available | 📈 Online Farm Investment Open</div>
+
 <header>
-    <h1>Mian Goat Farm Sahiwal</h1>
-    <p>Khaalis Nasli Bakray, Qurbani 2027 aur Online Sadqah Service</p>
+    <div class="nav-container">
+        <div class="logo" onclick="showPage('home')">🐐 MIAN GOAT FARM</div>
+        <div class="nav-links">
+            <a id="nav-home" class="active" onclick="showPage('home')">Home</a>
+            <a id="nav-invest" class="nav-invest-btn" onclick="showPage('invest')">📈 Invest With Us</a>
+            <a id="nav-about" onclick="showPage('about')">About Us</a>
+            <a id="nav-career" onclick="showPage('career')">Career</a>
+            <a id="nav-contact" onclick="showPage('contact')">Contact</a>
+        </div>
+    </div>
 </header>
 
-<div class="container">
-
-    <!-- Online Qurbani & Sadqah Section -->
-    <div class="highlight-box">
-        <h2>🌙 Online Qurbani aur Sadqah Service (Direct Mustahiqeen Tak)</h2>
-        <p>Agar aap Pakistan mein hain ya birun-e-mulk (overseas) rehte hain aur apni <strong>Eid-ul-Adha ki Qurbani</strong> ya <strong>Sadqah</strong> ka bakra karwana chahte hain, toh hum aap ke naam ki Qurbani kar ke pooray bakray ka gosht apne gaon ke ghareeb aur zarooratmand khandano mein taqseem karte hain.</p>
-        <ul>
-            <li>✅ Qurbani aur taqseem ki mukammal video aap ko WhatsApp par bheji jati hai.</li>
-            <li>✅ Sehatmand aur Shariah ke mutabiq mukammal janwar.</li>
-            <li>✅ Sahiwal ke dehi ilaqon ke mustahiq gharanon tak direct pohanch.</li>
-        </ul>
-        <a class="btn-whatsapp" href="https://wa.me." target="_blank">📲 Online Qurbani / Sadqah Book Karein</a>
-    </div>
-
-    <h2 style="color: #1b4332; text-align: center; margin-bottom: 20px;">🐐 Dastiyab Bakray aur Bakriyan (For Sale)</h2>
-
-    <!-- Goats Catalog -->
-    <div class="grid">
-        
-        <!-- Goat 1 -->
-        <div class="card">
-            <img src="https://placeholder.com" alt="Sahiwal Beetal Bakra for Qurbani">
-            <div class="card-body">
-                <div class="card-title">Pure Sahiwal Beetal Bakra (Code #01)</div>
-                <div class="details">
-                    <strong>Nasal:</strong> Sahiwal Beetal<br>
-                    <strong>Umar:</strong> 2 Daant (Qurbani ke liye tayyar)<br>
-                    <strong>Live Wazan:</strong> 65 KG<br>
-                    <strong>Location:</strong> Sahiwal, Punjab
-                </div>
-                <div class="price">Qeemat: Rabta Karein</div>
-                <a class="btn-whatsapp" href="https://wa.me." target="_blank">📲 WhatsApp par Khareedein</a>
-            </div>
+<!-- ==================== 1. HOME PAGE ==================== -->
+<div id="home" class="page-section active">
+    <section class="hero">
+        <h1>Mian Goat Farm Sahiwal</h1>
+        <p>Sahiwal ki khaalis nasli Beetal aur Makkhi Cheena bakray aur bakriyan ab online khareedein, ya hamare farm mein online investment kar ke halal munafa kamayein.</p>
+        <div class="hero-btns">
+            <button class="btn-gold" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">🛒 Bakray & Bakriyan Dekhein</button>
+            <button class="btn-outline" onclick="showPage('invest')">📈 Online Investment Karein</button>
         </div>
+    </section>
 
-        <!-- Goat 2 -->
-        <div class="card">
-            <img src="https://placeholder.com" alt="Makkhi Cheena Bakra">
-            <div class="card-body">
-                <div class="card-title">Makkhi Cheena Bakra (Code #02)</div>
-                <div class="details">
-                    <strong>Nasal:</strong> Makkhi Cheena<br>
-                    <strong>Umar:</strong> 2 Daant<br>
-                    <strong>Live Wazan:</strong> 55 KG<br>
-                    <strong>Location:</strong> Sahiwal, Punjab
-                </div>
-                <div class="price">Qeemat: Rabta Karein</div>
-                <a class="btn-whatsapp" href="https://wa.me." target="_blank">📲 WhatsApp par Khareedein</a>
-            </div>
+    <!-- Live Farm Inventory Stats -->
+    <div class="stats-bar">
+        <div class="stat-box">
+            <div class="stat-num">25+</div>
+            <div class="stat-label">Qurbani & VIP Bakray</div>
         </div>
-
-        <!-- Goat 3 -->
-        <div class="card">
-            <img src="https://placeholder.com" alt="Sadqah Goat Sahiwal">
-            <div class="card-body">
-                <div class="card-title">Sadqah aur Aqiqah Bakra (Code #03)</div>
-                <div class="details">
-                    <strong>Maqsad:</strong> Sadqah / Aqiqah / Ghar ke liye<br>
-                    <strong>Umar:</strong> Kheera / 2 Daant<br>
-                    <strong>Live Wazan:</strong> 35 KG<br>
-                    <strong>Service:</strong> Zibah aur Taqseem ki sahulat maujood
-                </div>
-                <div class="price">Qeemat: Rabta Karein</div>
-                <a class="btn-whatsapp" href="https://wa.me." target="_blank">📲 WhatsApp par Book Karein</a>
-            </div>
+        <div class="stat-box">
+            <div class="stat-num">8</div>
+            <div class="stat-label">Pure Breed Bakriyan</div>
         </div>
-
-    </div>
-
-    <!-- Trust & Process Section -->
-    <div class="steps">
-        <h3 style="color: #1b4332; margin-top: 0;">Hamare Farm se Khareedari aur Online Qurbani ka Tareeqa</h3>
-        <p>1. <strong>Pasand Karein:</strong> Upar diye gaye janwaron mein se pasand karein ya WhatsApp par mazeed videos mangwayein.</p>
-        <p>2. <strong>Live Video Call:</strong> Aap kisi bhi waqt video call par janwar ki sehat aur wazan check kar sakte hain.</p>
-        <p>3. <strong>Cargo ya Qurbani:</strong> Poore Pakistan mein cargo ki sahulat maujood hai, ya aap ke kehne par hum aap ke naam ki Qurbani/Sadqah kar ke gosht gaon ke ghareeb logon mein baant denge.</p>
-    </div>
-
-</div>
-
-<footer>
-    <p><strong>Mian Goat Farm - Sahiwal, Punjab, Pakistan</strong></p>
-    <p>WhatsApp & Call: +92 304 3029292</p>
-    <p>&copy; 2026-2027 Mian Goat Farm. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+        <div class="stat-box">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Vaccinated & Healthy</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-num">Sahiwal</div>
+            <div class="stat-label">Direct Farm Location</div>
+            
