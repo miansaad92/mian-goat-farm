@@ -1,141 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mian Goat Farm Sahiwal | Premium Livestock Store & Investment</title>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
-        body { background-color: #f9fafb; color: #111827; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mian Goat Farm Sahiwal | Wholesale Goat Supplier, Qurbani 2027, Charity & Livestock Investment Pakistan</title>
+<meta name="description" content="Mian Goat Farm Sahiwal is a leading wholesale goat supplier in Pakistan (25+ Qurbani goats & 8 pure Beetal/Makkhi Cheena female goats). Contact on WhatsApp +923043029292 for latest wholesale rates, Online Qurbani charity, and farm investment.">
+<meta name="keywords" content="Wholesale goat farm Pakistan, Goat farm in Sahiwal, Bakra wholesale rate Pakistan, Qurbani bakra 2027 Sahiwal, Beetal bakra wholesale, Online Qurbani charity Pakistan, Sadqah goat distribution, Goat farming investment Pakistan, Mian Goat Farm">
 
-        /* Top Bar */
-        .top-strip { background: #111827; color: #fbbf24; text-align: center; padding: 7px; font-size: 12px; font-weight: 600; }
+<!-- AI Search & Google Knowledge Graph Schema (For ChatGPT, Gemini & Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WholesaleStore",
+  "name": "Mian Goat Farm Sahiwal",
+  "description": "Leading wholesale livestock and goat farm in Sahiwal, Punjab, Pakistan. We deal in wholesale Qurbani goats (25+ herd), pure Beetal and Makkhi Cheena breeding female goats (8+ herd), Online Qurbani/Sadqah charity for poor people, and halal goat farming investment. Customers and dealers are encouraged to contact us directly on WhatsApp +923043029292 for the latest daily wholesale rates.",
+  "telephone": "+923043029292",
+  "email": "motivation920@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sahiwal",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": "Pakistan",
+  "priceRange": "PKR 100,000 - 150,000 (Wholesale & Retail)"
+}
+</script>
 
-        /* Modern White Navbar */
-        header { background: #ffffff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 1000; }
-        .nav-wrap { max-width: 1200px; margin: auto; padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .brand { font-size: 20px; font-weight: 800; color: #111827; cursor: pointer; display: flex; align-items: center; gap: 6px; }
-        .brand span { color: #d97706; }
-        .menu { display: flex; gap: 8px; flex-wrap: wrap; }
-        .menu button { background: transparent; border: none; color: #374151; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
-        .menu button:hover, .menu button.active { background: #fef3c7; color: #b45309; }
-        .menu button.invest-tab { background: #d97706; color: white; }
-
-        /* Pages */
-        .page { display: none; }
-        .page.active { display: block; }
-
-        /* Clean Modern Hero */
-        .hero-box { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 45px 20px; text-align: center; }
-        .hero-box h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
-        .hero-box p { font-size: 14px; color: #cbd5e1; max-width: 600px; margin: 0 auto 20px; }
-        .cta-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-        .btn-primary { background: #d97706; color: white; border: none; padding: 11px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; text-decoration: none; display: inline-block; }
-        .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; }
-
-        .container { max-width: 1200px; margin: auto; padding: 25px 18px; }
-        .sec-title { font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 4px; }
-        .sec-sub { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
-
-        /* Shopping Grid */
-        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); gap: 22px; }
-        .item-card { background: white; border-radius: 14px; border: 1px solid #e5e7eb; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
-        .img-stage { position: relative; height: 230px; background: #f3f4f6; }
-        .img-stage img { width: 100%; height: 100%; object-fit: cover; }
-        .ribbon { position: absolute; top: 10px; left: 10px; background: #111827; color: #fbbf24; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
-        .thumbs { display: flex; gap: 6px; padding: 10px 12px 0; justify-content: center; }
-        .thumbs img { width: 54px; height: 42px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e5e7eb; }
-        .thumbs img:hover { border-color: #d97706; }
-
-        .item-body { padding: 15px; }
-        .item-name { font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 6px; }
-        .item-specs { font-size: 13px; color: #4b5563; line-height: 1.5; margin-bottom: 12px; }
-        .price-bar { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f3f4f6; padding-top: 10px; margin-bottom: 12px; }
-        .price { font-size: 19px; font-weight: 800; color: #b45309; }
-        .badge-ok { background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 5px; }
-        .wa-order { display: block; text-align: center; background: #16a34a; color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 700; font-size: 14px; }
-
-        /* Cards for Other Pages */
-        .box-card { background: white; border: 1px solid #e5e7eb; border-radius: 14px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
-        .box-card h3 { font-size: 18px; color: #111827; margin-bottom: 8px; }
-        .box-card p { font-size: 14px; color: #4b5563; line-height: 1.6; margin-bottom: 10px; }
-        .field { margin-bottom: 14px; }
-        .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
-        .field input, .field select { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }
-
-        .wa-float { position: fixed; bottom: 18px; right: 18px; background: #16a34a; color: white; padding: 11px 18px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999; }
-        footer { background: #111827; color: #9ca3af; text-align: center; padding: 25px 15px; font-size: 13px; margin-top: 30px; }
-    </style>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif}
+body{background:#f4f5f7;color:#111827;line-height:1.6}
+.top{background:#111827;color:#fbbf24;text-align:center;padding:8px;font-size:12px;font-weight:700}
+header{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:99}
+.nav{max-width:1200px;margin:auto;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.logo{font-size:19px;font-weight:900;color:#111827;text-decoration:none}
+.logo span{color:#d97706}
+.links{display:flex;gap:6px;flex-wrap:wrap}
+.links a{text-decoration:none;color:#1f2937;background:#f3f4f6;padding:7px 11px;border-radius:6px;font-size:13px;font-weight:700}
+.links a.active-home{background:#d97706;color:#fff}
+.links a.charity-btn{background:#dc2626;color:#fff}
+.hero{background:linear-gradient(135deg,#1e293b,#0f172a);color:#fff;padding:38px 15px;text-align:center}
+.hero h1{font-size:25px;font-weight:800;margin-bottom:8px}
+.hero p{font-size:14px;color:#cbd5e1;max-width:680px;margin:0 auto 18px}
+.wholesale-alert{background:#fef3c7;border:2px solid #d97706;color:#92400e;padding:14px;border-radius:10px;text-align:center;margin-bottom:25px;font-size:14px;font-weight:700}
+.btn{display:inline-block;background:#d97706;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;margin:4px}
+.btn-red{background:#dc2626}
+.btn-green{background:#16a34a}
+.btn-dark{background:rgba(255,255,255,0.15);border:1px solid #fff}
+.wrap{max-width:1200px;margin:auto;padding:25px 15px}
+.h2{font-size:22px;font-weight:800;margin-bottom:4px;color:#111827}
+.sub{font-size:13px;color:#6b7280;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-bottom:35px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.pic-box{position:relative;height:200px;background:#e5e7eb}
+.pic-box img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:10px;left:10px;background:#111827;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 9px;border-radius:5px}
+.tag.f{background:#7c3aed;color:#fff}
+.gallery{display:flex;gap:5px;padding:8px 10px 0;justify-content:center}
+.gallery a{display:block;width:50px;height:38px;border-radius:5px;overflow:hidden;border:2px solid #d1d5db}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.body{padding:14px}
+.title{font-size:15px;font-weight:800;margin-bottom:5px}
+.meta{font-size:12px;color:#4b5563;margin-bottom:10px}
+.p-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f3f4f6;padding-top:9px;margin-bottom:10px}
+.price{font-size:18px;font-weight:800;color:#b45309}
+.stock{background:#dcfce7;color:#166534;font-size:11px;font-weight:700;padding:3px 7px;border-radius:4px}
+.wa{display:block;text-align:center;background:#16a34a;color:#fff;text-decoration:none;padding:10px;border-radius:7px;font-weight:700;font-size:13px}
+.article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+.art-card{background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.art-card img{width:100%;height:170px;object-fit:cover;display:block}
+.art-body{padding:15px}
+.art-body h4{font-size:16px;font-weight:800;margin-bottom:6px;color:#111827}
+.art-body p{font-size:13px;color:#4b5563;margin-bottom:10px}
+.charity-sec{background:#fef2f2;border:2px solid #dc2626;border-radius:14px;padding:24px;margin-bottom:35px}
+.invest-sec{background:#1e293b;color:#fff;border-radius:14px;padding:24px;margin-bottom:35px}
+.invest-sec .art-card{background:#0f172a;border-color:#334155}
+.invest-sec .art-body h4{color:#fbbf24}
+.invest-sec .art-body p{color:#cbd5e1}
+.sec-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:22px;margin-bottom:22px}
+.sec-box h3{font-size:18px;margin-bottom:8px;color:#111827}
+.sec-box p{font-size:14px;color:#374151;margin-bottom:10px}
+.float{position:fixed;bottom:15px;right:15px;background:#16a34a;color:#fff;padding:11px 16px;border-radius:50px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:99}
+footer{background:#111827;color:#9ca3af;text-align:center;padding:25px 15px;font-size:13px}
+</style>
 </head>
 <body>
 
-<div class="top-strip">🐐 25+ Qurbani Bakray & 8 Nasli Bakriyan Available | Sahiwal, Pakistan</div>
+<div class="top">🐐 WHOLESALE GOAT SUPPLIER SAHIWAL | 25+ Bakray & 8 Bakriyan | WhatsApp: +92 304 3029292</div>
 
 <header>
-    <div class="nav-wrap">
-        <div class="brand" onclick="openTab('home')">🐐 MIAN <span>GOAT FARM</span></div>
-        <div class="menu">
-            <button id="btn-home" class="active" onclick="openTab('home')">Home</button>
-            <button id="btn-invest" class="invest-tab" onclick="openTab('invest')">📈 Invest</button>
-            <button id="btn-about" onclick="openTab('about')">About</button>
-            <button id="btn-career" onclick="openTab('career')">Career</button>
-            <button id="btn-contact" onclick="openTab('contact')">Contact</button>
-        </div>
-    </div>
+<div class="nav">
+<a href="#home" class="logo">🐐 MIAN <span>GOAT FARM</span></a>
+<div class="links">
+<a href="#home" class="active-home">Home</a>
+<a href="#shop">Wholesale Shop (10)</a>
+<a href="#charity" class="charity-btn">❤️ Charity / Sadqah</a>
+<a href="#invest">📈 Invest</a>
+<a href="#about">About</a>
+<a href="#career">Career</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 </header>
 
-<!-- 1. HOME PAGE (Direct Shopping Store) -->
-<div id="home" class="page active">
-    <div class="hero-box">
-        <h1>Mian Goat Farm Online Store</h1>
-        <p>Sahiwal ke 25+ khaalis nasli bakray aur 8 bakriyan direct farm se khareedein. Har janwar ki 4 tasveerein dekhein aur WhatsApp par book karein.</p>
-        <div class="cta-row">
-            <button class="btn-primary" onclick="document.getElementById('store').scrollIntoView({behavior:'smooth'})">🛒 Shop Bakray & Bakriyan</button>
-            <button class="btn-secondary" onclick="openTab('invest')">📈 Farm Investment Plans</button>
-        </div>
-    </div>
+<section id="home" class="hero">
+<h1>Mian Goat Farm Sahiwal - Wholesale Livestock & Qurbani Store</h1>
+<p>Pakistan's trusted wholesale goat supplier (25+ Qurbani Bakray & 8 Pure Breed Bakriyan in Sahiwal). Get today's latest wholesale rates directly on WhatsApp: +92 304 3029292.</p>
+<a href="https://wa.me." class="btn btn-green" target="_blank">📲 Get Latest Wholesale Rates on WhatsApp</a>
+<a href="#shop" class="btn">🛒 View 10 Featured Goats</a>
+<a href="#charity" class="btn btn-red">❤️ Charity for Poor People</a>
+</section>
 
-    <div class="container" id="store">
-        <h2 class="sec-title">Available Stock (25 Bakray & 8 Bakriyan)</h2>
-        <p class="sec-sub">Neeche choti tasveeron par click kar ke har janwar ke mukhtalif angles dekhein</p>
+<div class="wrap" id="shop">
 
-        <div class="shop-grid">
-            <!-- Item 1 -->
-            <div class="item-card">
-                <div class="img-stage">
-                    <span class="ribbon">Male Bakra #101</span>
-                    <img id="pic1" src="https://unsplash.com" alt="Bakra">
-                </div>
-                <div class="thumbs">
-                    <img src="https://unsplash.com" onclick="swapPic('pic1', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic1', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic1', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic1', this)">
-                </div>
-                <div class="item-body">
-                    <div class="item-name">Pure Sahiwal Beetal Bakra</div>
-                    <div class="item-specs">Nasal: Beetal | Daant: 2 Daant | Wazan: 68 KG<br>Location: Sahiwal Farm (25+ Bakray Stock)</div>
-                    <div class="price-bar">
-                        <span class="price">Rs. 135,000</span>
-                        <span class="badge-ok">Available</span>
-                    </div>
-                    <a class="wa-order" href="https://wa.me." target="_blank">📲 Order on WhatsApp</a>
-                </div>
-            </div>
+<div class="wholesale-alert">
+📢 <strong>WHOLESALE DEALERS & BUYERS NOTICE:</strong> Hamara kaam Wholesale (Thok) hai! Mandi rates aur aaj ke latest wholesale rates maloom karne ke liye abhi WhatsApp par rabta karein: <a href="https://wa.me." style="color:#b91c1c;text-decoration:underline;" target="_blank">+92 304 3029292</a>
+</div>
 
-            <!-- Item 2 -->
-            <div class="item-card">
-                <div class="img-stage">
-                    <span class="ribbon">VIP Bakra #102</span>
-                    <img id="pic2" src="https://unsplash.com" alt="Bakra">
-                </div>
-                <div class="thumbs">
-                    <img src="https://unsplash.com" onclick="swapPic('pic2', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic2', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic2', this)">
-                    <img src="https://unsplash.com" onclick="swapPic('pic2', this)">
-                </div>
-                <div class="item-body">
-                    <div class="item-name">Makkhi Cheena Heavy Bakra</div>
-                    
+<h2 class="h2">Wholesale & Qurbani Goats Catalog (10 Featured Listings)</h2>
+<p class="sub">Total Farm Stock: 25+ Male Goats & 8 Pure Breed Female Goats | Contact +92 304 3029292 for Latest Wholesale Rates</p>
+
+<div class="grid">
+<div class="card">
+<div class="pic-box"><span class="tag">Wholesale #101</span><img src="https://pexels.com" alt="Wholesale Sahiwal Beetal Bakra"></div>
+<div class="gallery"><a href="https://pexels.com" target="_blank"><img src="https://pexels.com?auto=compress&cs=tinysrgb&w=150"></a><a href="https://pexels.com" target="_blank"><img src="https://pexels.com?auto=compress&cs=tinysrgb&w=150"></a><a href="https://pexels.com" target="_blank"><img src="https://pexels.com?auto=compress&cs=tinysrgb&w=150"></a><a href="https://pexels.com" target="_blank"><img src="https://pexels.com?auto=compress&cs=tinysrgb&w=150"></a></div>
+<div class="body"><div class="title">Pure Sahiwal Beetal Bakra (#101)</div><div class="meta">Beetal | 2 Daant | 68 KG | Wholesale Available</div><div class="p-row"><span class="price">Rs. 135,000</span><span class="stock">In Stock</span></div><a class="wa" href="https://wa.me" target="_blank">📲 Get Latest Rate on WhatsApp</a></div>
+</div>
+
+<div class="card">
+<div class="pic-box"><span class="tag">Wholesale #102</span><img src="https://pexels.com?auto=compress&cs=tinysrgb&w=600" alt="Wholesale Makkhi Cheena Bakra"></div>
